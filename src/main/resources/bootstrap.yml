@@ -1,0 +1,3 @@
+server:
+  #Por estandar u convencion el puerto del server de Eureka debe empezar por 8761
+  port: 8761
