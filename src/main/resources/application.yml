@@ -3,9 +3,3 @@ application:
  version: 1.0.0
  author: Rodrigo Ramirez
 
-eureka:
- client:
-   #Para decirle que este proyecto no se registre como cliente (por defecto es true)
-  fetch-registry: false
-  #Para decirle que no se registre asi mismo
-  register-with-eureka: false

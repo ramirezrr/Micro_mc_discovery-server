@@ -1,3 +1,31 @@
 server:
   #Por estandar u convencion el puerto del server de Eureka debe empezar por 8761
   port: 8761
+
+spring:
+  application:
+    name: discovery-server
+  config:
+    activate:
+      on-profile: discovery-server-1
+
+eureka:
+  client:
+    #Para decirle que este proyecto no se registre como cliente (por defecto es true)
+    fetch-registry: false
+    #Para decirle que no se registre asi mismo
+    register-with-eureka: false
+    # 1 Cambiar y personalizar una parte especifica de la interfaz de Eureka (A nivel de server)
+  datacenter: Mitocode
+  environment: Develoment
+  #Cambiar y personalizar una parte especifica de la interfaz de Eureka (A nivel de Instancia, cuando creas replicas) (instance: Esto solo es para la conf de los clientes y no del server)
+  instance:
+    hostname: localhost2
+      # 2 Para q no muestre la ip solo muestre el hostname
+    preferIpAddress: false
+    #Los clientes envian pulsaciones cada cierto tiempo para que Eureka lo registre y de esa manera sepa q están en estado optimo
+    # 3 tiempo que puede pasar antes de que una instancia que no ha renovado su lease (registro) sea considerada inactiva y eliminada del registro del servidor
+    lease-expiration-duration-in-seconds: 10
+    # 4 especifica cada cuántos segundos la instancia debería enviar un heartbeat al servidor Eureka, Aquí se renuevan cada 10 segundo
+    lease-renewal-interval-in-seconds: 10
+
