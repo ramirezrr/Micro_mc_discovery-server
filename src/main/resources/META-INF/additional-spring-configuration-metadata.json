@@ -14,5 +14,10 @@
       "name": "application.title",
       "type": "java.lang.String",
       "description": "Description for application.title."
+    },
+    {
+      "name": "application.description",
+      "type": "java.lang.String",
+      "description": "Description for application.description."
     }
   ] }

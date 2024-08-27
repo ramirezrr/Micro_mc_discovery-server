@@ -4,13 +4,10 @@ server:
 spring:
   application:
     name: Micro_mc_discovery-server
-  config:
-    activate:
-      onProfile: discovery-server-1
 
 eureka:
   client:
     fetchRegistry: false
     registerWithEureka: false
-  datacenter: PeruAmerica1
-  environment: Develoment
+  datacenter: PeruAmerica
+  environment: Development

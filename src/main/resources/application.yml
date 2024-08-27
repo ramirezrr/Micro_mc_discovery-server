@@ -1,5 +1,5 @@
-
 application:
-  title: Micro_mc_discovery-server
-  version: 1.0.0
+  title: @project.name@
+  version: @project.version@
+  description: @project.description@
   author: Rodrigo R.R.

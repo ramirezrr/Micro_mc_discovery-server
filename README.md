@@ -14,7 +14,7 @@ Este proyecto es una implementación de **Eureka Server** utilizando **Spring Bo
 - **Spring Boot 3.3.1** y **Spring Cloud 2023.0.3**: Versiones de las librerías principales utilizadas en el proyecto.
 
 ## Perfil del Proyecto
-Este proyecto contiene una instancia del servidor **Eureka**, cada una configurada con un perfil diferente (`discovery-server-1`).
+Este proyecto se despliega usando como perfil el nombre del archivo (`eureka`).
 
 ## Dependencias
 Este proyecto utiliza las siguientes dependencias principales:
@@ -28,8 +28,6 @@ Este proyecto utiliza las siguientes dependencias principales:
 Para que las instancias de Eureka Server se reconozcan entre sí, es necesario editar el archivo `/etc/hosts` de tu sistema y agregar las siguientes entradas:
 ```bash
 127.0.0.1       discovery1
-127.0.0.1       discovery2
-127.0.0.1       discovery3
 ```
 
 ## Compilación y Ejecución
@@ -37,7 +35,7 @@ Para que las instancias de Eureka Server se reconozcan entre sí, es necesario e
 Para compilar el proyecto, utiliza el siguiente comando Maven:
 
 ```bash
-mvn spring-boot:run -Dspring-boot.run.profiles=<perfil>
+mvn spring-boot:run -Dspring-boot.run.profiles=eureka
 ```
 
 
