@@ -14,7 +14,7 @@ Este proyecto es una implementación de **Eureka Server** utilizando **Spring Bo
 - **Spring Boot 3.3.1** y **Spring Cloud 2023.0.3**: Versiones de las librerías principales utilizadas en el proyecto.
 
 ## Perfil del Proyecto
-Este proyecto se despliega usando como perfil el nombre del archivo (`eureka`).
+Este proyecto se despliega usando como perfil el nombre del archivo (`dev`).
 
 ## Dependencias
 Este proyecto utiliza las siguientes dependencias principales:
